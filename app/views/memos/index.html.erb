@@ -1,2 +1,8 @@
 <h1>Memos</h1>
-<h2>Nothing yet...</h2>
+<ul>
+  <% @memos.each do |memo| %>
+    <li>
+      <%= memo.title %>
+    </li>
+  <% end %>
+</ul>
