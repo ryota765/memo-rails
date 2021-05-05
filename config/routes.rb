@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root "memos#index"
 
   get "/memos", to: "memos#index"
+  get "/memos/:id", to: "memos#show"
 end

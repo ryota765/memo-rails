@@ -1,8 +1,10 @@
 <h1>Memos</h1>
 <ul>
-  <% @memos.each do |memo| %>
-    <li>
-      <%= memo.title %>
-    </li>
-  <% end %>
+	<% @memos.each do |memo| %>
+		<li>
+			<a href="/memos/<%= memo.id %>">
+				<%= memo.title %>
+			</a>
+		</li>
+	<% end %>
 </ul>
