@@ -2,9 +2,9 @@
 <ul>
 	<% @memos.each do |memo| %>
 		<li>
-			<a href="/memos/<%= memo.id %>">
-				<%= memo.title %>
-			</a>
+			<%= link_to memo.title, memo %>
 		</li>
 	<% end %>
 </ul>
+
+<%= link_to "New memo", new_memo_path %>
