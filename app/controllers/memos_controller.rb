@@ -1,4 +1,6 @@
 class MemosController < ApplicationController
+  http_basic_authenticate_with name: "ryotan", password: "secret", except: [:index, :show]
+
   def index
     @memos = Memo.all
   end
